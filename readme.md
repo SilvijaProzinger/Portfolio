@@ -4,9 +4,7 @@ Preview: https://silvijaprozinger.github.io/Portfolio/
 
 In development. Features to be added: 
 
-* a hamburger menu on small resolutions
-* possible color scheme change
-* various resolution fix
+* about me text
 
 ## Pages
 * home page
