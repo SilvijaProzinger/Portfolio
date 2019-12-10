@@ -6,6 +6,10 @@ html, body {
   flex-direction: column;
 } 
 
+ul {
+  list-style-type: square;
+}
+
 .first-page { 
   background: url(images/bgimage.jpg) no-repeat center center fixed; /* image credit to Bench Accounting on Unsplash */
   -webkit-background-size: cover;
@@ -14,7 +18,7 @@ html, body {
   background-size: cover;
 }
 
-.first-page, .second-page, .fourth-page {
+.first-page, .fourth-page {
   height: 100vh;
 }
 
@@ -22,10 +26,15 @@ html, body {
 	background: white;
 }
 
-.main-title, .page-title {
+.main-title {
 	font-family: 'Montserrat', sans-serif;
 	text-align: center;
 	color: #FA8072;
+}
+
+.page-title {
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
 }
 
 .sub-title, .text, .page-text {;
@@ -33,14 +42,6 @@ html, body {
 	text-align: center;
 }
 
-/*
-
-when on webpage style it's link like active in js
-.menu-link:active {
-	border: 3px solid #C96862;
-}
-
-*/
 a {
 	text-decoration: none;
 	color: black;
@@ -68,14 +69,6 @@ a:visited {
   top: 50%;
   width: 100%;
 }
-
-/*.title-decoration {
-	position: relative;
-  left: 50%;
-	top: 60%;
-	margin-left: -368px;
-}
-*/
 
 .long-line {
   margin: 0 20% 0 20%;
@@ -184,34 +177,6 @@ a:visited {
  padding: 0.5% 2.5%;
 }
 
-/*
-.overlay {
-	position: absolute;
-	top: 0;
-	bottom: 0;
-	left: 0;
-	width: 100%;
-	height: 180px;
-	opacity: 0;
-	transition: .5s ease;
-	background-color: #F7CCAD;
-	z-index: 10;
-}
-
-.thumbnails:hover .overlay {
-  opacity: 1;
-}
-
-/*.overlay-text {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	-ms-transform: translate(-50%, -50%);
-	text-align: center;
-}
-*/
-
 .contact-info {
 	display: flex;
 	flex-direction: row;
@@ -256,16 +221,6 @@ a:visited {
   position: fixed;
   display: none;
 }
-
-/*
-colors
-#ff5750
-#C96862
-#74413E
-#ffbfa8
-#FA8072
-
-*/
 
 /* responsiveness */
 
@@ -335,8 +290,6 @@ colors
     transition:background-size 1s, background-color 1s;
   }
 }
-
-
 
 /* animations */
 
@@ -429,3 +382,13 @@ colors
             transform: translateY(0);
   }
 }
+
+/*
+colors
+#ff5750
+#C96862
+#74413E
+#ffbfa8
+#FA8072
+
+*/
