@@ -1,4 +1,6 @@
 let menu = document.getElementById('menu');
+let thumbnail = document.getElementsByClassName('project-image');
+let gif = false
 
 const openMenu = () => {
 	console.log('clicked')
@@ -48,15 +50,14 @@ const removeShown = (element, name) => {
 
 filterSelection('all')
 
-/*
-// Add active class to the current button (highlight it)
-var btnContainer = document.getElementById("myBtnContainer");
-var btns = btnContainer.getElementsByClassName("btn");
-for (var i = 0; i < btns.length; i++) {
-  btns[i].addEventListener("click", function(){
-    var current = document.getElementsByClassName("active");
-    current[0].className = current[0].className.replace(" active", "");
-    this.className += " active";
-  });
+//upon clicking the thumbnail play the project preview gif
+for (let i = 0; i < thumbnail.length; i++){
+  thumbnail[i].addEventListener('click', function(){
+    gif = !gif 
+    if (gif === true){
+      thumbnail[i].src = `images/P${i+1}gif.gif` //because looping start from 0 and projects from 1
+    } else {
+      thumbnail[i].src = `images/P${i+1}small.png`
+    }
+  })
 }
-*/
