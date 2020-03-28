@@ -1,9 +1,9 @@
 let menu = document.getElementById('menu');
 let thumbnail = document.getElementsByClassName('project-image');
+let playButton = document.getElementsByClassName('play-button');
 let gif = false
 
 const openMenu = () => {
-	console.log('clicked')
 	if (menu.style.display === "block") {
     	menu.style.display = "none";
   	} else {
@@ -50,13 +50,15 @@ const removeShown = (element, name) => {
 
 filterSelection('all')
 
-//upon clicking the thumbnail play the project preview gif
-for (let i = 0; i < thumbnail.length; i++){
-  thumbnail[i].addEventListener('click', function(){
+//upon clicking the play button show the project preview gif
+for (let i = 0; i < playButton.length; i++){
+  playButton[i].addEventListener('click', function(){
     gif = !gif 
     if (gif === true){
-      thumbnail[i].src = `images/P${i+1}gif.gif` //because looping start from 0 and projects from 1
+      playButton[i].style.backgroundImage = 'url(images/pause.png)' //on click change icon from play to pause
+      thumbnail[i].src = `images/P${i+1}gif.gif` //because looping starts from 0 and projects from 1
     } else {
+      playButton[i].style.backgroundImage = 'url(images/play-button.png)'
       thumbnail[i].src = `images/P${i+1}small.png`
     }
   })

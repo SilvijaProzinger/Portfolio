@@ -244,6 +244,26 @@ a:visited {
   display: none;
 }
 
+.button-container {
+  position: relative;
+}
+
+.play-button {
+  position: absolute;
+  top: 45%;
+  left: 45%;
+  z-index: 999;
+  background: url(images/play-button.png); /* credit to smashicons on flaticon*/
+  border: none;
+  width: 40px;
+  height: 40px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  cursor: pointer;
+}
+
+
 /* responsiveness */
 
 /* wide screens */
