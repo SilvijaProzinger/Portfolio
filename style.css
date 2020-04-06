@@ -319,7 +319,6 @@ a:visited {
   }
 
   .menu-container {
-    z-index: 0;
     background-color: transparent;
   }
 
@@ -372,6 +371,11 @@ a:visited {
 
   .icons .page-text {
     margin: 0 10% 0 10%;
+  }
+
+  .play-button {
+    top: 43%;
+    left: 43%;
   }
 }
 /* animations */
