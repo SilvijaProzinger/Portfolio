@@ -2,6 +2,9 @@ let menu = document.getElementById('menu');
 let thumbnail = document.getElementsByClassName('project-image');
 let playButton = document.getElementsByClassName('play-button');
 let gif = false
+let card = document.getElementsByClassName('card');
+let description = document.getElementsByClassName('project-description');
+let show = document.getElementsByClassName('show');
 
 const openMenu = () => {
 	if (menu.style.display === "block") {
@@ -62,4 +65,15 @@ for (let i = 0; i < playButton.length; i++){
       thumbnail[i].src = `images/P${i+1}small.png`
     }
   })
+}
+
+for(let i = 0; i < card.length; i++){
+  card[i].onmouseover = function(){
+    description[i].style.display = "block";
+    show[i].style.boxShadow = "0 4px 8px 0 rgba(0,0,0,0.2)"
+  }
+  card[i].onmouseout = function (){
+    description[i].style.display = "none";
+    show[i].style.boxShadow = "none"
+  }
 }
