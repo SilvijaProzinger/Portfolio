@@ -16,7 +16,7 @@ span:hover {
 }
 
 .first-page { 
-  background: url(images/bgimage.jpg) no-repeat center center fixed; /* image credit to Bench Accounting on Unsplash */
+  background: url(images/bgimage.jpg) no-repeat center center; /* image credit to Bench Accounting on Unsplash */
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
