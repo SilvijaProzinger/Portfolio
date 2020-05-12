@@ -87,7 +87,6 @@ a:visited {
   height: 7px;
   background: linear-gradient(to right,#FA8072, #F7CCAD);
   border: 0;
-  border-radius: 50%;
 }
 
 .menu-container {
@@ -208,6 +207,10 @@ a:visited {
 .project-title:hover {
   color: #FA8072;
   cursor: pointer;
+}
+
+.show-all-button {
+  position: relative;
 }
 
 .show-all {
@@ -424,7 +427,7 @@ a:visited {
   }
 
   .icons .page-text {
-    margin: 0 10% 0 10%;
+    margin: 0 6% 0 6%;
   }
 
   .play-button {
