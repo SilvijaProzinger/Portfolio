@@ -184,6 +184,10 @@ a:visited {
   display: none;
 }
 
+.project-description p {
+  font-weight: 300;
+}
+
 .card {
   display: none;
 }
@@ -282,6 +286,7 @@ a:visited {
 .skills {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   background-color: #ffbfa8;
   justify-content: center;
   margin: 0 15% 0 15%;
@@ -293,7 +298,7 @@ a:visited {
 
 .skill-one, .skill-two {
   text-align: center;
-  padding: 4% 8% 4% 8%;
+  padding: 6% 8% 4% 8%;
 }
 
 .skill-icon {
