@@ -298,7 +298,7 @@ a:visited {
   flex-direction: row;
   flex-wrap: wrap;
   border: 1px solid #FA8072;
-  justify-content: center;
+  justify-content: space-evenly;
   margin: 0 15% 0 15%;
 }
 
