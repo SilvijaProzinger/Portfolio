@@ -31,7 +31,8 @@ span:hover {
   position: fixed;
 }
 
-.fourth-page {
+.fourth-page p {
+  font-weight: 300;
   //height: 100vh;
 }
 
@@ -88,6 +89,10 @@ a:visited {
   height: 7px;
   background: linear-gradient(to right,#FA8072, #F7CCAD);
   border: 0;
+}
+
+.hidden {
+  opacity: 0;
 }
 
 .menu-container {
@@ -185,7 +190,6 @@ a:visited {
   text-justify: inter-word;
   text-align: center;
   display: none;
-  transition: 0.3s;
 }
 
 .project-description p {
@@ -465,6 +469,11 @@ a:visited {
     background-size: 200% 100%; 
     transition:background-size 1s, background-color 1s;
   }
+
+  .hidden {
+    opacity: 1;
+  }
+
 }
 
 @media only screen and (max-width: 450px) {
@@ -499,6 +508,7 @@ a:visited {
     margin: 30px;
   }
 }
+
 /* animations */
 
 .animation {

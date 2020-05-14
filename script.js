@@ -67,6 +67,7 @@ for (let i = 0; i < playButton.length; i++){
   })
 }
 
+//on hover show project description
 for(let i = 0; i < card.length; i++){
   card[i].onmouseover = function(){
     description[i].style.display = "block";
@@ -77,3 +78,35 @@ for(let i = 0; i < card.length; i++){
     show[i].style.boxShadow = "none"
   }
 }
+
+//animate some elements when they get into viewport
+(function() {
+  let elements;
+  let windowHeight;
+  let windowWidth; 
+
+  function init() {
+    elements = document.querySelectorAll('.hidden');
+    windowHeight = window.innerHeight;
+    windowWidth = window.innerWidth
+  }
+
+  function checkPosition() {
+    for (let i = 0; i < elements.length; i++) {
+      let element = elements[i];
+      let positionFromTop = elements[i].getBoundingClientRect().top;
+
+      if (positionFromTop - windowHeight <= 0 && windowWidth > 675) {
+        element.classList.add('animation');
+        element.classList.add('animation-two');
+        element.classList.remove('hidden');
+      }
+    }
+  }
+
+  window.addEventListener('scroll', checkPosition);
+  window.addEventListener('resize', init);
+
+  init();
+  checkPosition();
+})();
