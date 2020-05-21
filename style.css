@@ -215,10 +215,16 @@ a:visited {
   cursor: pointer;
 }
 
+/*.filter-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
 .show-all-button {
   position: relative;
 }
-
+*/
 .show-all {
   position: absolute;
   left: 50%;
