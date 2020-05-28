@@ -295,8 +295,8 @@ a:visited {
 
 .play-button {
   position: absolute;
-  top: 45%;
-  left: 45%;
+  top: 43%;
+  left: 43%;
   z-index: 1;
   background: url(images/icons8-circled-play-80.png); /* credit to smashicons on flaticon*/
   border: none;
