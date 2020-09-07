@@ -53,7 +53,7 @@ for (let i = 0; i < playButton.length; i++){
         gif = !gif 
         if (gif === true){
             playButton[i].style.backgroundImage = 'url(images/icons8-pause-button-80.png)' //on click change icon from play to pause
-            thumbnail[i].src = `images/P${i+1}gif.gif` //because looping starts from 0 and projects from 1
+            thumbnail[i].src = `images/P${i+1}webp.webp` //because looping starts from 0 and projects from 1
         } else {
             playButton[i].style.backgroundImage = 'url(images/icons8-circled-play-80.png)'
             thumbnail[i].src = `images/P${i+1}small.png`
