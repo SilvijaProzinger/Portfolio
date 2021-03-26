@@ -5,10 +5,36 @@ let gif = false
 let card = document.getElementsByClassName('card');
 let description = document.getElementsByClassName('project-description');
 let show = document.getElementsByClassName('show');
+let webpChecker
 
 const openMenu = () => {
     menu.style.display === "block" ? menu.style.display = "none" : menu.style.display = "block";
 } 
+
+//check if webp is supported, if not gif image will be served instead
+async function WebpIsSupported() {
+    // If the browser doesn't has the method createImageBitmap, you can't display webp format
+    if (!self.createImageBitmap) return false;
+  
+    // Base64 representation of a white point image
+    const webpData = 'data:image/webp;base64,UklGRiQAAABXRUJQVlA4IBgAAAAwAQCdASoCAAEAAQAcJaQAA3AA/v3AgAA=';
+    
+    // Retrieve the Image in Blob Format
+    const blob = await fetch(webpData).then(r => r.blob());
+
+    // If the createImageBitmap method succeeds, return true, otherwise false
+    return createImageBitmap(blob).then(() => true, () => false);
+}
+
+(async () => {
+    if(await WebpIsSupported()) {
+        webpChecker = true
+        console.log(webpChecker)
+    } else {
+        webpChecker = false
+        console.log(webpChecker)
+    }
+})();
 
 const filterSelection = (c) => {
     let x, i;
@@ -51,9 +77,13 @@ filterSelection('all')
 for (let i = 0; i < playButton.length; i++){
     playButton[i].addEventListener('click', function(){
         gif = !gif 
-        if (gif === true){
+        if (gif === true && webpChecker === true){
             playButton[i].style.backgroundImage = 'url(images/icons8-pause-button-80.png)' //on click change icon from play to pause
             thumbnail[i].src = `images/P${i+1}webp.webp` //because looping starts from 0 and projects from 1
+        //if webp is not supported use gif format instead
+        } else if (gif === true && webpChecker === false){
+            playButton[i].style.backgroundImage = 'url(images/icons8-pause-button-80.png)' 
+            thumbnail[i].src = `images/P${i+1}gif.gif` 
         } else {
             playButton[i].style.backgroundImage = 'url(images/icons8-circled-play-80.png)'
             thumbnail[i].src = `images/P${i+1}small.png`
