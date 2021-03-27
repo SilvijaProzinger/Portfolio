@@ -8,145 +8,154 @@
     <title>💻 Welcome! ☕</title>
 </head>
 <body>
-    <div class="first-page" id="home">
-        <div class="menu-container">
-            <div class="menu" id="menu">
-                <a href="#home" class="menu-link home-link">HOME</a>
-                <a href="#about" class="menu-link about-link">ABOUT</a>
-                <a href="#projects" class="menu-link work-link">PROJECTS</a>
-                <a href="#contact" class="menu-link contact-link">CONTACT</a>
-            </div>
-        </div>
-        <button class="hamburger" id="hamburgerMenu"  onclick="openMenu()">
-            <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="bars" class="svg-inline--fa fa-bars fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="#FA8072" d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"></path></svg>
-        </button>
-        <div class="central-content"> 
-            <h1 class="main-title animation animation-one">hi, i'm silvija :)</h1>
-            <h3 class="text sub-title animation animation-two">a frontend web developer. i like to start small and think big.</h3>
-            <hr class="long-line">
-        </div>
-    </div>
+    <header>
+        <nav class="menu-container">
+            <ul class="menu" id="menu">
+                <li><a href="#home" class="menu-link home-link">HOME</a></li>             
+                <li><a href="#about" class="menu-link about-link">ABOUT</a></li>
+                <li><a href="#projects" class="menu-link work-link">PROJECTS</a></li>
+                <li><a href="#contact" class="menu-link contact-link">CONTACT</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <div class="second-page" id="about">
-        <h2 class="page-title hidden">about</h2>
-        <hr class="line">
-        <h3 class="text page-text">
-        <p> My name is Silvija and I'm a frontend web developer from Croatia (Europe). I completed Udacity's Front End Web Developer Nanodegree in 2018 and I'm continuously looking for opportunities to work, learn and polish my web development skills. Currently focused on frontend web development, with growing interest in UI/UX design. I create responsive, modern looking websites. When I'm not practicing coding I'm playing RPG video games, reading and drinking a lot of coffee.</p>
-        </h3>
-        <div class="skills hidden">
-            <div class="skill-one">
-                <img class="skill-icon" alt="coding icon" src="images/icons8-code-100.png"> <!-- icon credit to icons8 -->
-                <h4 class="text">CODING</h4>
-                <p class="text">HTML<br>
-                    CSS<br>
-                    JavaScript<br>
-                    jQuery<br>
-                    React<br>
-                    Sass
-                </p>
+    <main>
+        <section class="first-page" id="home">       
+            <button class="hamburger" id="hamburgerMenu"  onclick="openMenu()">
+                <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="bars" class="svg-inline--fa fa-bars fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="#FA8072" d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"></path></svg>
+            </button>
+            <div class="central-content"> 
+                <h1 class="main-title animation animation-one">hi, i'm silvija :)</h1>
+                <p class="text sub-title animation animation-two">a frontend web developer. i like to start small and think big.</p>
+                <hr class="long-line">
             </div>
-            <div class="skill-two">
-                <img class="skill-icon" alt="design icon" src="images/icons8-paint-palette-100.png"> <!-- icon credit to icons8 -->
-                <h4 class="text">UI DESIGN</h4>
-                <p class="text">Adobe XD<br>
-                    Adobe Photoshop
-                </p>
-            </div>
-        </div>
-    </div>
+        </section>
 
-    <div class="third-page" id="projects">
-        <h2 class="page-title hidden">featured projects</h2>
-        <hr class="line">
-        <div class="filter-buttons">
-            <div class="show-all-button"><a class="menu-link show-all" onclick="filterSelection('all')">SHOW ALL</a></div>
-            <!--<div class="show-all-button"><a class="menu-link show-all" onclick="filterSelection('static')">STATIC</a></div>
-            <div class="show-all-button"><a class="menu-link show-all" onclick="filterSelection('dynamic')">DYNAMIC</a></div>-->
-        </div>
-        <div class="projects hidden">
-            <div class="card show react foursquareapi udacity dynamic">
-                <div class="button-container">
-                    <button class="play-button"></button>
-                    <img class="project-image" src="images/P1small.png" alt="project image one" loading="lazy" width="300px"/>
+        <section class="second-page" id="about">
+            <h1 class="page-title hidden">about</h1>
+            <hr class="line">
+            <p class="text page-text"> My name is Silvija and I'm a frontend web developer from Croatia (Europe). I completed Udacity's Front End Web Developer Nanodegree in 2018 and I'm continuously looking for opportunities to work, learn and polish my web development skills. Currently focused on frontend web development, with growing interest in UI/UX design. I create responsive, modern looking websites. When I'm not practicing coding I'm playing RPG video games, reading and drinking a lot of coffee.</p>
+            <div class="skills hidden">
+                <div class="skill-one">
+                    <img class="skill-icon" alt="coding icon" src="images/icons8-code-100.png"> <!-- icon credit to icons8 -->
+                    <p class="text">CODING</p>
+                    <ul class="text skills-list">
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                        <li>jQuery</li>
+                        <li>React</li>
+                        <li>SASS</li>
+                    </ul>
                 </div>
-                    <div class="project-text">
-                        <h3><a href="https://github.com/SilvijaProzinger/P8-React-Neighborhood-Map" class="text project-title">Neighborhood Map</a></h3>
-                        <h4 class="text project-description"><span class="hashtag" onclick="filterSelection('react')">#React  </span><span class="hashtag" onclick="filterSelection('foursquareapi')">#FoursquareAPI  </span><span class="hashtag" onclick="filterSelection('udacity')">#Udacity</span>
-                        <p>Made with React, this neighborhood map app utilizes Foursquare API and Google Maps to show the user all the coffee shop in center of Osijek, Croatia. It also shows the users the location details and offers the option to search for places.</p></h4>
-                    </div>
-            </div>
-            <div class="card show html css javascript udacity static">
-                <div class="button-container">
-                    <button class="play-button"></button>
-                    <img class="project-image" src="images/P2small.png" alt="project image two" loading="lazy" width="300px"/>  
-                </div>          
-                    <div class="project-text">
-                            <h3><a href="https://github.com/SilvijaProzinger/P3-Memory-Game" class="text project-title">Memory Game</a></h3>
-                        <h4 class="text project-description"><span class="hashtag" onclick="filterSelection('html')">#HTML  </span><span class="hashtag" onclick="filterSelection('css')">#CSS  </span><span class="hashtag" onclick="filterSelection('javascript')">#JavaScript</span>  <span class="hashtag" onclick="filterSelection('udacity')">#Udacity</span>
-                        <p>A well known memory game, made with JavaScript.</p></h4>
-                    </div>
-            </div>
-            <div class="card show html sass javascript moviedbapi dynamic">
-                <div class="button-container">
-                    <button class="play-button"></button>
-                    <img class="project-image" src="images/P3small.png" alt="project image three" loading="lazy" width="300px"/>
+                <div class="skill-two">
+                    <img class="skill-icon" alt="design icon" src="images/icons8-paint-palette-100.png"> <!-- icon credit to icons8 -->
+                    <p class="text">UI DESIGN</p>
+                    <ul class="text skills-list">
+                        <li>Adobe XD</li>
+                        <li>Adobe Photoshop</li>
+                    </ul>
                 </div>
-                    <div class="project-text">
-                        <h3><a href="https://github.com/SilvijaProzinger/Movie-App" class="text project-title">Movie App</a></h3>
-                        <h4 class="text project-description"><span class="hashtag" onclick="filterSelection('html')">#HTML  </span><span class="hashtag" onclick="filterSelection('sass')">#SASS </span><span class="hashtag" onclick="filterSelection('javascript')">#JavaScript  </span><span class="hashtag" onclick="filterSelection('moviedbapi')">#MoviedbAPI  </span>
-                        <p>A collection of currently top rated movies fetched from MoviedbAPI, also including options to show movie details and get a shuffled movie recommendation based on selected genre.</p></h4>
-                    </div>
             </div>
-            <div class="card show react mobx static">
-                <div class="button-container">
-                    <button class="play-button"></button>
-                    <img class="project-image" src="images/P4small.png" alt="project image four" loading="lazy" width="300px"/>
-                </div>
-                    <div class="project-text">
-                        <h3><a href="https://github.com/SilvijaProzinger/Vehicle-App" class="text project-title">Vehicle App</a></h3>
-                        <h4 class="text project-description"><span class="hashtag" onclick="filterSelection('react')">#React  </span><span class="hashtag" onclick="filterSelection('mobx')">#MobX </span>
-                        <p>Made with React and MobX, this vehicle app shows cars and lets user filter through them, sort them alphabetically, add their own car or delete one of the cars from gallery.</p></h4>
-                    </div>          
-            </div>
-            <div class="card show express node axios dynamic">
-                <div class="button-container">
-                    <button class="play-button"></button>
-                    <img class="project-image" src="images/P5small.png" alt="project image five" loading="lazy" width="300px"/>
-                </div>
-                    <div class="project-text">
-                        <h3><a href="https://github.com/SilvijaProzinger/Frontend-Job-Crawler" class="text project-title">Job crawler</a></h3>
-                        <h4 class="text project-description"><span class="hashtag" onclick="filterSelection('express')">#Express  </span><span class="hashtag" onclick="filterSelection('node')">#Node </span><span class="hashtag" onclick="filterSelection('axios')">#Axios </span>
-                        <p>This is a web crawler made with Node, Axios and Express which searches two job searching websites and shows relevant results.</p></h4>
-                    </div>          
-            </div>
-            <div class="card show html javascript sass static">
-                <div class="button-container">
-                    <button class="play-button"></button>
-                    <img class="project-image" src="images/P6small.png" alt="project image five" loading="lazy" width="300px"/>
-                </div>
-                    <div class="project-text">
-                        <h3><a href="https://github.com/SilvijaProzinger/Featured-Artist" class="text project-title">Featured Artist</a></h3>
-                        <h4 class="text project-description"><span class="hashtag" onclick="filterSelection('html')">#HTML </span><span class="hashtag" onclick="filterSelection('javascript')">#JavaScript </span><span class="hashtag" onclick="filterSelection('sass')">#SASS </span>
-                        <p>Featured artist, a style focused static website made with vanilla JS and styled with SASS, which features a music player and various information about the artist.</p></h4>
-                    </div>          
-            </div>
-        </div>
-    </div>  
+        </section>
 
-    <div class="fourth-page" id="contact">
-        <h2 class="page-title hidden">contact</h2>
-        <hr class="line">
-        <h3 class="text page-text"><p>I'm available for any sort of job or internship opportunities. Feel free to contact me on 
-        one of my social network profiles linked below.</p></h3>
-        <div class="socials-div hidden">
-            <a class="calltoaction" href="mailto:silvija.prozinger@gmail.com"><img class="social-icon" alt="mail icon" src="images/icons8-important-mail-48.png">CONTACT ME</a> <!-- icon credit to icons8 -->
-            <div class="contact-info">
-            <h3 class="text socials"><a href="https://www.github.com/SilvijaProzinger" class="social-link">GitHub</a></h3>
-            <h3 class="text socials"><a href="https://www.linkedin.com/in/silvija-prozinger-8b6712162/" class="social-link">LinkedIn</a></h3>
-            <h3 class="text"><a href="https://www.twitter.com/cssandcoffee" class="social-link">Twitter</a></h3>
-        </div>
-        </div>
+        <section class="third-page" id="projects">
+            <h1 class="page-title hidden">featured projects</h1>
+            <hr class="line">
+            <div class="filter-buttons">
+                <div class="show-all-button"><a class="menu-link show-all" onclick="filterSelection('all')">SHOW ALL</a></div>
+                <!--<div class="show-all-button"><a class="menu-link show-all" onclick="filterSelection('static')">STATIC</a></div>
+                <div class="show-all-button"><a class="menu-link show-all" onclick="filterSelection('dynamic')">DYNAMIC</a></div>-->
+            </div>
+            <div class="projects hidden">
+                <div class="card show react foursquareapi udacity dynamic">
+                    <div class="button-container">
+                        <button class="play-button"></button>
+                        <img class="project-image" src="images/P1small.png" alt="project image one" loading="lazy" width="300px"/>
+                    </div>
+                        <div class="project-text">
+                            <h3><a href="https://github.com/SilvijaProzinger/P8-React-Neighborhood-Map" class="text project-title">Neighborhood Map</a></h3>
+                            <h4 class="text project-description"><span class="hashtag" onclick="filterSelection('react')">#React  </span><span class="hashtag" onclick="filterSelection('foursquareapi')">#FoursquareAPI  </span><span class="hashtag" onclick="filterSelection('udacity')">#Udacity</span>
+                            <p>Made with React, this neighborhood map app utilizes Foursquare API and Google Maps to show the user all the coffee shop in center of Osijek, Croatia. It also shows the users the location details and offers the option to search for places.</p></h4>
+                        </div>
+                </div>
+                <div class="card show html css javascript udacity static">
+                    <div class="button-container">
+                        <button class="play-button"></button>
+                        <img class="project-image" src="images/P2small.png" alt="project image two" loading="lazy" width="300px"/>  
+                    </div>          
+                        <div class="project-text">
+                                <h3><a href="https://github.com/SilvijaProzinger/P3-Memory-Game" class="text project-title">Memory Game</a></h3>
+                            <h4 class="text project-description"><span class="hashtag" onclick="filterSelection('html')">#HTML  </span><span class="hashtag" onclick="filterSelection('css')">#CSS  </span><span class="hashtag" onclick="filterSelection('javascript')">#JavaScript</span>  <span class="hashtag" onclick="filterSelection('udacity')">#Udacity</span>
+                            <p>A well known memory game, made with JavaScript.</p></h4>
+                        </div>
+                </div>
+                <div class="card show html sass javascript moviedbapi dynamic">
+                    <div class="button-container">
+                        <button class="play-button"></button>
+                        <img class="project-image" src="images/P3small.png" alt="project image three" loading="lazy" width="300px"/>
+                    </div>
+                        <div class="project-text">
+                            <h3><a href="https://github.com/SilvijaProzinger/Movie-App" class="text project-title">Movie App</a></h3>
+                            <h4 class="text project-description"><span class="hashtag" onclick="filterSelection('html')">#HTML  </span><span class="hashtag" onclick="filterSelection('sass')">#SASS </span><span class="hashtag" onclick="filterSelection('javascript')">#JavaScript  </span><span class="hashtag" onclick="filterSelection('moviedbapi')">#MoviedbAPI  </span>
+                            <p>A collection of currently top rated movies fetched from MoviedbAPI, also including options to show movie details and get a shuffled movie recommendation based on selected genre.</p></h4>
+                        </div>
+                </div>
+                <div class="card show react mobx static">
+                    <div class="button-container">
+                        <button class="play-button"></button>
+                        <img class="project-image" src="images/P4small.png" alt="project image four" loading="lazy" width="300px"/>
+                    </div>
+                        <div class="project-text">
+                            <h3><a href="https://github.com/SilvijaProzinger/Vehicle-App" class="text project-title">Vehicle App</a></h3>
+                            <h4 class="text project-description"><span class="hashtag" onclick="filterSelection('react')">#React  </span><span class="hashtag" onclick="filterSelection('mobx')">#MobX </span>
+                            <p>Made with React and MobX, this vehicle app shows cars and lets user filter through them, sort them alphabetically, add their own car or delete one of the cars from gallery.</p></h4>
+                        </div>          
+                </div>
+                <div class="card show express node axios dynamic">
+                    <div class="button-container">
+                        <button class="play-button"></button>
+                        <img class="project-image" src="images/P5small.png" alt="project image five" loading="lazy" width="300px"/>
+                    </div>
+                        <div class="project-text">
+                            <h3><a href="https://github.com/SilvijaProzinger/Frontend-Job-Crawler" class="text project-title">Job crawler</a></h3>
+                            <h4 class="text project-description"><span class="hashtag" onclick="filterSelection('express')">#Express  </span><span class="hashtag" onclick="filterSelection('node')">#Node </span><span class="hashtag" onclick="filterSelection('axios')">#Axios </span>
+                            <p>This is a web crawler made with Node, Axios and Express which searches two job searching websites and shows relevant results.</p></h4>
+                        </div>          
+                </div>
+                <div class="card show html javascript sass static">
+                    <div class="button-container">
+                        <button class="play-button"></button>
+                        <img class="project-image" src="images/P6small.png" alt="project image five" loading="lazy" width="300px"/>
+                    </div>
+                        <div class="project-text">
+                            <h3><a href="https://github.com/SilvijaProzinger/Featured-Artist" class="text project-title">Featured Artist</a></h3>
+                            <h4 class="text project-description"><span class="hashtag" onclick="filterSelection('html')">#HTML </span><span class="hashtag" onclick="filterSelection('javascript')">#JavaScript </span><span class="hashtag" onclick="filterSelection('sass')">#SASS </span>
+                            <p>Featured artist, a style focused static website made with vanilla JS and styled with SASS, which features a music player and various information about the artist.</p></h4>
+                        </div>          
+                </div>
+            </div>
+        </section>  
+
+        <section class="fourth-page" id="contact">
+            <h1 class="page-title hidden">contact</h1>
+            <hr class="line">
+            <p class="text page-text">I'm available for any sort of job or internship opportunities. Feel free to contact me on 
+            one of my social network profiles linked below.</p>
+            <div class="socials-div hidden">
+                <a class="calltoaction" href="mailto:silvija.prozinger@gmail.com"><img class="social-icon" alt="mail icon" src="images/icons8-important-mail-48.png">CONTACT ME</a> <!-- icon credit to icons8 -->
+                <ul class="contact-info">
+                    <li class="text socials"><a href="https://www.github.com/SilvijaProzinger" class="social-link">GitHub</a></li>
+                    <li class="text socials"><a href="https://www.linkedin.com/in/silvija-prozinger-8b6712162/" class="social-link">LinkedIn</a></li>
+                    <li class="text"><a href="https://www.twitter.com/cssandcoffee" class="social-link">Twitter</a></li>
+                </ul>
+            </div>
+        </section>
+    </main>
+        
+    <footer>
         <h4 class="text footer">© 2020 Silvija Prozinger </h4>
+    </footer>
 
     <script src="script.js"></script>
 </body>
