@@ -33,7 +33,6 @@ span:hover {
 
 .fourth-page p {
   font-weight: 300;
-  //height: 100vh;
 }
 
 .second-page, .third-page, .fourth-page {
@@ -93,6 +92,11 @@ a:visited {
 
 .hidden {
   opacity: 0;
+}
+
+.inline-link {
+  color: #FA8072;
+  font-weight: 700;
 }
 
 .menu-container {
@@ -183,14 +187,8 @@ a:visited {
 
 .project-image {
 	width: 100%;
-  //opacity: 0.6;
   --width: calc(100%);
 }
-
-/*.project-image:hover {
-  opacity: 1;
-}
-*/
 
 .project-description {
   text-justify: inter-word;
@@ -221,16 +219,6 @@ a:visited {
   cursor: pointer;
 }
 
-/*.filter-buttons {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-}
-
-.show-all-button {
-  position: relative;
-}
-*/
 .show-all {
   position: absolute;
   left: 50%;
@@ -324,10 +312,6 @@ a:visited {
   background: #ffbfa8;
 }
 
-.skills h4 {
-  //font-size: 1.2rem;
-}
-
 .skill-one, .skill-two {
   text-align: center;
   padding: 30px;
@@ -386,6 +370,7 @@ a:visited {
 .footer {
   margin: 50px;
 }
+
 /* responsiveness */
 
 /* wide screens */
@@ -516,6 +501,10 @@ a:visited {
 
   .footer {
     margin: 30px;
+  }
+
+  .fourth-page {
+    padding-top: 20px;
   }
 }
 
