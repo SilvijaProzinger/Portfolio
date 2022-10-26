@@ -80,10 +80,10 @@ for (let i = 0; i < playButton.length; i++){
         if (gif === true && webpChecker === true){
             playButton[i].style.backgroundImage = 'url(images/icons8-pause-button-80.png)' //on click change icon from play to pause
             thumbnail[i].src = `images/P${i+1}webp.webp` //because looping starts from 0 and projects from 1
-        //if webp is not supported use gif format instead
+            //if webp is not supported use gif format instead
         } else if (gif === true && webpChecker === false){
             playButton[i].style.backgroundImage = 'url(images/icons8-pause-button-80.png)' 
-            thumbnail[i].src = `images/P${i+1}gif.gif` 
+            thumbnail[i].src = `images/P${i+1}gif.gif`
         } else {
             playButton[i].style.backgroundImage = 'url(images/icons8-circled-play-80.png)'
             thumbnail[i].src = `images/P${i+1}small.png`
