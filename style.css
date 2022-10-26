@@ -181,6 +181,65 @@ a:visited {
 
 .skills-list {
   margin-left: -40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.skills-list li {
+  margin: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.skills-list li::before {
+  display: block;
+  content: "";
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+  height: 20px;
+  width: 20px;
+  margin-right: 5px;
+}
+
+.skill-html::before {
+  background-image: url('images/icons8-html-5.svg');
+}
+
+.skill-css::before {
+  background-image: url('images/icons8-css3.svg');
+}
+
+.skill-js::before {
+  background-image: url('images/icons8-javascript-logo.svg');
+}
+
+.skill-jquery::before {
+  background-image: url('images/icons8-jquery.svg');
+}
+
+.skill-react::before {
+  background-image: url('images/icons8-react.svg');
+}
+
+.skill-mage::before {
+  background-image: url('images/icons8-magento.svg');
+}
+
+.skill-wp::before {
+  background-image: url('images/icons8-wordpress.svg');
+}
+
+.skill-shop::before {
+  background-image: url('images/icons8-shopify.svg');
+}
+
+.skill-xd::before {
+  background-image: url('images/icons8-adobe-xd.svg');
+}
+
+.skill-ps::before {
+  background-image: url('images/icons8-adobe-photoshop.svg');
 }
 
 .projects {
@@ -319,20 +378,21 @@ a:visited {
 .skills {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
   justify-content: space-evenly;
   background: #ffbfa8;
+  padding: 4rem 0;
 }
 
 .skill-one, .skill-two {
   text-align: center;
   padding: 30px;
   margin: 10px 30px 0 30px;
+  flex: 50%;
 }
 
 .skill-icon {
-  width: 70px;
-  height: 70px;
+  width: 40px;
+  height: 40px;
   margin: 0 auto;
 }
 
@@ -411,8 +471,8 @@ a:visited {
   }
 
   .skill-icon {
-    width: 80px;
-    height: 80px;
+    width: 50px;
+    height: 50px;
   }
 
   .menu-link {
@@ -518,6 +578,10 @@ a:visited {
     font-size: 1rem;
   }
 
+  .skills {
+    padding: 3rem 0;
+  }
+
 }
 
 @media only screen and (max-width: 450px) {
@@ -548,6 +612,10 @@ a:visited {
 
   .fourth-page {
     padding-top: 20px;
+  }
+
+  .skills {
+    flex-wrap: wrap;
   }
 }
 
