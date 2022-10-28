@@ -1,14 +1,27 @@
-let menu = document.getElementById('menu');
-let thumbnail = document.getElementsByClassName('project-image');
-let playButton = document.getElementsByClassName('play-button');
+const menu = document.getElementById('menu');
+    menuButton = document.getElementById('hamburgerMenu');
+    thumbnail = document.getElementsByClassName('project-image');
+    playButton = document.getElementsByClassName('play-button');
+    card = document.getElementsByClassName('card');
+    description = document.getElementsByClassName('project-description');
+    show = document.getElementsByClassName('show');
+    windowWidth = window.innerWidth;
 let gif = false
-let card = document.getElementsByClassName('card');
-let description = document.getElementsByClassName('project-description');
-let show = document.getElementsByClassName('show');
 let webpChecker
 
 const openMenu = () => {
-    menu.style.display === "block" ? menu.style.display = "none" : menu.style.display = "block";
+    if (windowWidth <= 674){
+        if (menu.classList.contains('open')) {
+            menu.classList.add('closed')
+            menu.classList.remove('open')
+            menuButton.style.backgroundImage = 'url(images/icons8-menu.svg)';
+             
+        } else {
+            menu.classList.add('open')
+            menu.classList.remove('closed')
+            menuButton.style.backgroundImage = 'url(images/icons8-cancel.svg)';
+        }
+    }
 } 
 
 //check if webp is supported, if not gif image will be served instead
@@ -92,7 +105,7 @@ for (let i = 0; i < playButton.length; i++){
 }
 
 //on hover show project description
-for(let i = 0; i < card.length; i++){
+/*for(let i = 0; i < card.length; i++){
     card[i].onmouseover = function(){
         description[i].style.display = "block";
         show[i].style.boxShadow = "0 4px 8px 0 rgba(0,0,0,0.2)"
@@ -101,7 +114,7 @@ for(let i = 0; i < card.length; i++){
         description[i].style.display = "none";
         show[i].style.boxShadow = "none"
     }
-}
+}*/
 
 //animate some elements when they get into viewport
 (function() {
