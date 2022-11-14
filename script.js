@@ -6,6 +6,7 @@ const menu = document.getElementById('menu');
     description = document.getElementsByClassName('project-description');
     show = document.getElementsByClassName('show');
     windowWidth = window.innerWidth;
+    showAllButton = document.getElementById('showAll')
 let gif = false
 let webpChecker
 
@@ -52,7 +53,14 @@ async function WebpIsSupported() {
 const filterSelection = (c) => {
     let x, i;
     x = document.getElementsByClassName("card");
-    c === "all" ? c = "" : undefined
+    
+    if (c==="all"){
+        c = "" 
+        showAllButton.style.display = "none"
+    } else {
+        showAllButton.style.display = "block"
+    }
+
     for (i = 0; i < x.length; i++) {
         removeShown(x[i], "show");
         if (x[i].className.indexOf(c) > -1) {

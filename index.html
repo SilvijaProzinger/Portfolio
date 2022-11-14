@@ -9,7 +9,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
     <link rel="manifest" href="images/site.webmanifest">
-    <title>💻 Welcome! ☕</title>
+    <title>Welcome!</title>
 </head>
 <body>
     <header>
@@ -36,10 +36,9 @@
         <section class="second-page" id="about">
             <h1 class="page-title hidden">about</h1>
             <hr class="line">
-            <p class="text page-text"> My name is Silvija and I'm a frontend web developer from Croatia. I create responsive, modern looking websites and write informative 
-                articles on Educative.io. I completed Udacity's Front End Web Developer Nanodegree and I'm continuously looking for opportunities to work, learn and polish my web 
-                development skills. Currently focused on frontend web development, with growing interest in UI/UX design. 
-                When I'm not practicing coding I'm playing RPG video games, reading and drinking a lot of coffee.
+            <p class="text page-text"> My name is Silvija and I'm a frontend web developer from Croatia. I have work experience in e-commerce web development and Wordpress development. 
+                I create responsive, modern looking websites and write informative articles on Educative.io. I also completed Udacity's Front End Web Developer Nanodegree and I'm continuously looking for opportunities to work and polish my web 
+                development skills. When I'm not practicing coding I'm playing RPG video games, reading and drinking a lot of coffee. If you want my help in creating web presence check out my contact information below.
             </p>
             <div class="skills hidden">
                 <div class="skill-one">
@@ -71,20 +70,20 @@
             <h1 class="page-title hidden">featured projects</h1>
             <hr class="line">
             <div class="filter-buttons">
-                <div class="show-all-button"><a class="menu-link show-all" onclick="filterSelection('all')">SHOW ALL</a></div>
+                <div class="show-all-button"><a class="menu-link show-all" id="showAll" onclick="filterSelection('all')">SHOW ALL</a></div>
                 <!--<div class="show-all-button"><a class="menu-link show-all" onclick="filterSelection('static')">STATIC</a></div>
                 <div class="show-all-button"><a class="menu-link show-all" onclick="filterSelection('dynamic')">DYNAMIC</a></div>-->
             </div>
             <div class="projects hidden">
-                <div class="card show html javascript postcss static">
+                <div class="card show html javascript less static">
                     <div class="button-container">
                         <button class="play-button" aria-label="play gif"></button>
                         <img class="project-image" src="images/P1small.png" alt="project image one" loading="lazy" width="400px"/>
                     </div>
                         <div class="project-text">
-                            <h3><a href="https://github.com/SilvijaProzinger/Inchoo-crash-course" class="text project-title">Grabsbee Webshop</a></h3>
-                            <h4 class="text project-description"><span class="hashtag" onclick="filterSelection('javascript')">#JavaScript  </span><span class="hashtag" onclick="filterSelection('postcss')">#PostCSS  </span><span class="hashtag" onclick="filterSelection('html')">#HTML</span>
-                            <p>A client-side frisbee webshop made with semantic HTML, vanilla JS and PostCSS, created as the final project for Inchoo's Frontend Crash Course.</p></h4>
+                            <h3><a href="https://github.com/SilvijaProzinger/ecommerce-product-page" class="text project-title">E-commerce product page</a></h3>
+                            <h4 class="text project-description"><span class="hashtag" onclick="filterSelection('javascript')">#JavaScript  </span><span class="hashtag" onclick="filterSelection('less')">#LESS  </span><span class="hashtag" onclick="filterSelection('html')">#HTML</span>
+                            <p>My solution for Frontend Mentors E-commerce product page. This product page features a lightbox gallery and working minicart.</p></h4>
                         </div>
                 </div>
                 <div class="card show html css javascript udacity static">
@@ -106,7 +105,7 @@
                         <div class="project-text">
                             <h3><a href="https://github.com/SilvijaProzinger/Movie-App" class="text project-title">Movie App</a></h3>
                             <h4 class="text project-description"><span class="hashtag" onclick="filterSelection('html')">#HTML  </span><span class="hashtag" onclick="filterSelection('sass')">#SASS </span><span class="hashtag" onclick="filterSelection('javascript')">#JavaScript  </span><span class="hashtag" onclick="filterSelection('moviedbapi')">#MoviedbAPI  </span>
-                            <p>A collection of currently top rated movies fetched from MoviedbAPI, also including options to show movie details and get a shuffled movie recommendation based on selected genre.</p></h4>
+                            <p>A collection of top rated movies fetched from MoviedbAPI, including options to show movie details and get a shuffled movie recommendation based on selected genre.</p></h4>
                         </div>
                 </div>
                 <div class="card show react mobx static">
@@ -117,7 +116,7 @@
                         <div class="project-text">
                             <h3><a href="https://github.com/SilvijaProzinger/Vehicle-App" class="text project-title">Vehicle App</a></h3>
                             <h4 class="text project-description"><span class="hashtag" onclick="filterSelection('react')">#React  </span><span class="hashtag" onclick="filterSelection('mobx')">#MobX </span>
-                            <p>Made with React and MobX, this vehicle app shows cars and lets user filter through them, sort them alphabetically, add their own car or delete one of the cars from gallery.</p></h4>
+                            <p>Made with React and MobX, this vehicle app shows cars and lets user filter them, sort them, add their own car or delete one from the gallery.</p></h4>
                         </div>          
                 </div>
                 <div class="card show express node axios dynamic">
@@ -139,17 +138,13 @@
                         <div class="project-text">
                             <h3><a href="https://github.com/SilvijaProzinger/Featured-Artist" class="text project-title">Featured Artist</a></h3>
                             <h4 class="text project-description"><span class="hashtag" onclick="filterSelection('html')">#HTML </span><span class="hashtag" onclick="filterSelection('javascript')">#JavaScript </span><span class="hashtag" onclick="filterSelection('sass')">#SASS </span>
-                            <p>Featured artist, a style focused static website made with vanilla JS and styled with SASS, which features a music player and various information about the artist.</p></h4>
+                            <p>A style focused static website made with JS and styled with SASS, which features a music player and various information about the artist.</p></h4>
                         </div>          
                 </div>
             </div>
         </section>  
 
         <section class="fourth-page" id="contact">
-           <!-- <h1 class="page-title hidden">contact</h1>
-            <hr class="line">
-            <p class="text page-text">I'm available for any sort of job or internship opportunities. Feel free to contact me on 
-            one of my social network profiles linked below.</p>-->
             <div class="socials-div hidden">
                 <a class="calltoaction" href="mailto:silvija.prozinger@gmail.com"><img class="social-icon" alt="mail icon" src="images/icons8-important-mail-48.png">CONTACT ME</a> <!-- icon credit to icons8 -->
                 <ul class="contact-info">
