@@ -370,6 +370,9 @@ a:visited {
 
 .button-container {
   position: relative;
+  height: 300px;
+  display: flex;
+  align-items: center;
 }
 
 .play-button {
@@ -628,6 +631,10 @@ a:visited {
 
   .hidden {
     opacity: 1;
+  }
+
+  .button-container {
+    height: 200px;
   }
 
   .page-text {
