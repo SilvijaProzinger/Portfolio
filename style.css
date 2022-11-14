@@ -277,7 +277,7 @@ a:visited {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  /*margin-bottom: 5rem;*/
+  margin-bottom: 5rem;
 }
 
 .project-text {
@@ -295,19 +295,17 @@ a:visited {
 }
 
 .filter-buttons {
-  /*margin-top: 2rem;*/
+  margin-top: 2rem;
 }
 
 .show-all-button {
-  height: 70px;
-  margin: 1rem 0 2rem 0;
+  /*height: 70px;*/
 }
 
 .show-all {
   display: block;
   margin: 0 auto;
   width: fit-content;
-  text-align: center;
   border: 2px solid transparent:
 }
 
@@ -475,6 +473,10 @@ a:visited {
     padding: 7%;
   }
 
+  .page-title {
+    padding-top: 5rem;
+  }
+
   .text {
     font-size: 1.3rem;
   }
@@ -483,21 +485,18 @@ a:visited {
     font-size: 1.8rem;
   }
 
-  .page-title {
-    padding-top: 4rem;
-  }
-
   .show-all {
     padding: 15px;
     font-size: 2em;
   }
 
-  .show-all-button {
-    margin: 1rem 0 3rem 0;
-  }
-
   .project-text {
     padding: 2rem 2rem 2rem 6rem;
+  }
+
+  .skills {
+    padding-left: 15%;
+    padding-right: 15%;
   }
 
   .skill-icon {
@@ -508,6 +507,14 @@ a:visited {
   .menu-link {
     font-size: 1.5rem;
   }
+
+  .show {
+    justify-content: center;
+  }
+  .project-text {
+    max-width: 50%;
+  }
+
 }
 
 
@@ -547,7 +554,7 @@ a:visited {
 
   .show {
     flex-direction: column;
-    /*margin-bottom: 3rem;*/
+    margin-bottom: 3rem;
   }
 
   .menu {
