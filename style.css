@@ -37,6 +37,7 @@ span:hover {
 
 .second-page, .third-page, .fourth-page {
 	background: white;
+  overflow: hidden;
 }
 
 .main-title {
@@ -129,7 +130,7 @@ a:visited {
 	font-family: 'Open Sans', sans-serif;
 	text-decoration: none;
 	background-color: #ffbfa8;
-	padding: 8px;
+	padding: 8px 10px;
 	margin: 10px;
 	color: black;
   background-size: 0% 100%;
@@ -152,8 +153,8 @@ a:visited {
 }
 
 .page-title {
-	font-size: 3rem;
-	padding-top: 5%;
+	font-size: 2.1rem;
+	padding-top: 3rem;
   font-weight: 400;
 }
 
@@ -276,7 +277,7 @@ a:visited {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 5rem;
+  /*margin-bottom: 5rem;*/
 }
 
 .project-text {
@@ -294,11 +295,12 @@ a:visited {
 }
 
 .filter-buttons {
-  margin-top: 2rem;
+  /*margin-top: 2rem;*/
 }
 
 .show-all-button {
   height: 70px;
+  margin: 1rem 0 2rem 0;
 }
 
 .show-all {
@@ -474,12 +476,24 @@ a:visited {
   }
 
   .text {
-    font-size: 1.6rem;
+    font-size: 1.3rem;
+  }
+
+  .sub-title {
+    font-size: 1.8rem;
+  }
+
+  .page-title {
+    padding-top: 4rem;
   }
 
   .show-all {
     padding: 15px;
     font-size: 2em;
+  }
+
+  .show-all-button {
+    margin: 1rem 0 3rem 0;
   }
 
   .project-text {
@@ -492,7 +506,7 @@ a:visited {
   }
 
   .menu-link {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
   }
 }
 
@@ -501,17 +515,17 @@ a:visited {
 
 @media only screen and (max-width: 674px) {
   .main-title {
-    font-size: 3.5rem;
+    font-size: 3.2rem;
   }
 
   .sub-title {
-    font-size: 1rem;
+    font-size: 1.2rem;
     margin-left: 20px;
     margin-right: 20px;
   }
   
   .projects {
-    margin: 3rem 0 0 0;
+    margin: 2rem 0 0 0;
     padding-top: 0;
   }
 
@@ -533,7 +547,7 @@ a:visited {
 
   .show {
     flex-direction: column;
-    margin-bottom: 3rem;
+    /*margin-bottom: 3rem;*/
   }
 
   .menu {
@@ -585,7 +599,7 @@ a:visited {
   }
 
   .page-title {
-    font-size: 2rem;
+    font-size: 1.3rem;
   }
 
   .show-all {
