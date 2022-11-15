@@ -525,11 +525,11 @@ a:visited {
 
 @media only screen and (max-width: 674px) {
   .main-title {
-    font-size: 3.2rem;
+    font-size: 3rem;
   }
 
   .sub-title {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     margin-left: 20px;
     margin-right: 20px;
   }
