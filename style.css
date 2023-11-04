@@ -218,24 +218,24 @@ a:visited {
   background-image: url('images/icons8-javascript-logo.svg');
 }
 
-.skill-jquery::before {
-  background-image: url('images/icons8-jquery.svg');
+.skill-next::before {
+  background-image: url('images/icons8-next.svg');
 }
 
 .skill-react::before {
   background-image: url('images/icons8-react.svg');
 }
 
-.skill-mage::before {
-  background-image: url('images/icons8-magento.svg');
+.skill-tailwind::before {
+  background-image: url('images/icons8-tailwind.svg');
 }
 
-.skill-wp::before {
-  background-image: url('images/icons8-wordpress.svg');
+.skill-typescript::before {
+  background-image: url('images/icons8-typescript.svg');
 }
 
-.skill-shop::before {
-  background-image: url('images/icons8-shopify.svg');
+.skill-mobx::before {
+  background-image: url('images/icons8-mobx.svg');
 }
 
 .skill-xd::before {
