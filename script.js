@@ -46,10 +46,8 @@ async function WebpIsSupported() {
 (async () => {
   if (await WebpIsSupported()) {
     webpChecker = true;
-    console.log(webpChecker);
   } else {
     webpChecker = false;
-    console.log(webpChecker);
   }
 })();
 

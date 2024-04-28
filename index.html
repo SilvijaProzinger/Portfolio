@@ -1,166 +1,401 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans&display=swap" rel="stylesheet">
-    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
-    <link rel="manifest" href="images/site.webmanifest">
+  <head>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-53GW91F95E"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-53GW91F95E");
+    </script>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="style-minified.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="images/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="images/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="images/favicon-16x16.png"
+    />
+    <link rel="manifest" href="images/site.webmanifest" />
+    <link rel="preload" as="image" href="images/bgimage.jpg">
     <title>Welcome!</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <nav class="menu-container">
-            <ul class="menu closed" id="menu">
-                <li><a href="#home" class="menu-link home-link">HOME</a></li>             
-                <li><a href="#about" class="menu-link about-link">ABOUT</a></li>
-                <li><a href="#projects" class="menu-link work-link">PROJECTS</a></li>
-                <li><a href="#contact" class="menu-link contact-link">CONTACT</a></li>
-            </ul>
-        </nav>
+      <nav class="menu-container">
+        <ul class="menu closed" id="menu">
+          <li><a href="#home" class="menu-link home-link">HOME</a></li>
+          <li><a href="#about" class="menu-link about-link">ABOUT</a></li>
+          <li><a href="#projects" class="menu-link work-link">PROJECTS</a></li>
+          <li><a href="#contact" class="menu-link contact-link">CONTACT</a></li>
+        </ul>
+      </nav>
     </header>
 
     <main>
-        <section class="first-page" id="home">       
-            <button class="hamburger" id="hamburgerMenu" onclick="openMenu()" aria-label="open menu"></button>
-            <div class="central-content"> 
-                <h1 class="main-title animation animation-one">hi, i'm silvija :)</h1>
-                <p class="text sub-title animation animation-two">a frontend web developer. i like to start small and think big.</p>
-                <hr class="long-line">
-            </div>
-        </section>
+      <section class="first-page" id="home">
+        <button
+          class="hamburger"
+          id="hamburgerMenu"
+          onclick="openMenu()"
+          aria-label="open menu"
+        ></button>
+        <div class="central-content">
+          <h1 class="main-title animation animation-one">hi, i'm silvija :)</h1>
+          <p class="text sub-title animation animation-two">
+            a frontend web developer. i like to start small and think big.
+          </p>
+          <hr class="long-line" />
+        </div>
+      </section>
 
-        <section class="second-page" id="about">
-            <h1 class="page-title hidden">about</h1>
-            <hr class="line">
-            <p class="text page-text"> My name is Silvija and I'm a frontend web developer from Croatia. I have work experience in e-commerce web development as well as in creating React/Next.js powered websites. 
-                I create responsive, modern looking websites and write informative articles on Educative.io. I also completed Udacity's Front End Web Developer Nanodegree and I'm continuously looking for opportunities to work and polish my web 
-                development skills. When I'm not practicing coding I'm playing RPG video games, reading and drinking a lot of coffee. If you want my help in creating web presence check out my contact information below.
-            </p>
-            <div class="skills hidden">
-                <div class="skill-one">
-                    <img class="skill-icon" alt="coding icon" src="images/icons8-code-100.png"> <!-- icon credit to icons8 -->
-                    <p class="text">CODING</p>
-                    <ul class="text skills-list">
-                        <li class="skill-html">HTML</li>
-                        <li class="skill-css">CSS</li>
-                        <li class="skill-js">JavaScript</li>
-                        <li class="skill-react">React</li>
-                        <li class="skill-next">Next.js</li>
-                        <li class="skill-tailwind">Tailwind</li>
-                        <li class="skill-typescript">TypeScript</li>
-                        <li class="skill-mobx">MobX</li>
-                    </ul>
-                </div>
-                <div class="skill-two">
-                    <img class="skill-icon" alt="design icon" src="images/icons8-paint-palette-100.png"> <!-- icon credit to icons8 -->
-                    <p class="text">UI DESIGN</p>
-                    <ul class="text skills-list">
-                        <li class="skill-xd">Adobe XD</li>
-                        <li class="skill-ps">Adobe Photoshop</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
+      <section class="second-page" id="about">
+        <h1 class="page-title hidden">about</h1>
+        <hr class="line" />
+        <p class="text page-text">
+          My name is Silvija and I'm a frontend web developer from Croatia. I
+          have work experience in e-commerce web development as well as in
+          creating React/Next.js powered websites. I create responsive, modern
+          looking websites and write informative articles on Educative.io. I
+          also completed Udacity's Front End Web Developer Nanodegree and I'm
+          continuously looking for opportunities to work and polish my web
+          development skills. When I'm not practicing coding I'm playing RPG
+          video games, reading and drinking a lot of coffee. If you want my help
+          in creating web presence check out my contact information below.
+        </p>
+        <div class="skills hidden">
+          <div class="skill-one">
+            <img
+              class="skill-icon"
+              alt="coding icon"
+              src="images/icons8-code-100.png"
+            />
+            <!-- icon credit to icons8 -->
+            <p class="text">CODING</p>
+            <ul class="text skills-list">
+              <li class="skill-html">HTML</li>
+              <li class="skill-css">CSS</li>
+              <li class="skill-js">JavaScript</li>
+              <li class="skill-react">React</li>
+              <li class="skill-next">Next.js</li>
+              <li class="skill-tailwind">Tailwind</li>
+              <li class="skill-typescript">TypeScript</li>
+              <li class="skill-mobx">MobX</li>
+            </ul>
+          </div>
+          <div class="skill-two">
+            <img
+              class="skill-icon"
+              alt="design icon"
+              src="images/icons8-paint-palette-100.png"
+            />
+            <!-- icon credit to icons8 -->
+            <p class="text">UI DESIGN</p>
+            <ul class="text skills-list">
+              <li class="skill-xd">Adobe XD</li>
+              <li class="skill-ps">Adobe Photoshop</li>
+            </ul>
+          </div>
+        </div>
+      </section>
 
-        <section class="third-page" id="projects">
-            <h1 class="page-title hidden">featured side projects</h1>
-            <hr class="line">
-            <div class="filter-buttons">
-                <div class="show-all-button"><a class="menu-link show-all" id="showAll" onclick="filterSelection('all')">SHOW ALL</a></div>
-                <!--<div class="show-all-button"><a class="menu-link show-all" onclick="filterSelection('static')">STATIC</a></div>
+      <section class="third-page" id="projects">
+        <h1 class="page-title hidden">featured side projects</h1>
+        <hr class="line" />
+        <div class="filter-buttons">
+          <div class="show-all-button">
+            <a
+              class="menu-link show-all"
+              id="showAll"
+              onclick="filterSelection('all')"
+              >SHOW ALL</a
+            >
+          </div>
+          <!--<div class="show-all-button"><a class="menu-link show-all" onclick="filterSelection('static')">STATIC</a></div>
                 <div class="show-all-button"><a class="menu-link show-all" onclick="filterSelection('dynamic')">DYNAMIC</a></div>-->
+        </div>
+        <div class="projects hidden">
+          <div class="card show react redux typescript dynamic">
+            <div class="button-container">
+              <button class="play-button" aria-label="play gif"></button>
+              <img
+                class="project-image"
+                src="images/P1small.png"
+                alt="project image one"
+                loading="lazy"
+                width="400px"
+              />
             </div>
-            <div class="projects hidden">
-                <div class="card show react redux typescript">
-                    <div class="button-container">
-                        <button class="play-button" aria-label="play gif"></button>
-                        <img class="project-image" src="images/P1small.png" alt="project image one" loading="lazy" width="400px"/>
-                    </div>
-                        <div class="project-text">
-                            <h3><a href="https://github.com/SilvijaProzinger/hangman-game" class="text project-title">Hangman with React & Redux Toolkit</a></h3>
-                            <h4 class="text project-description"><span class="hashtag" onclick="filterSelection('react')">#React  </span><span class="hashtag" onclick="filterSelection('redux')">#Redux Toolkit  </span><span class="hashtag" onclick="filterSelection('typescript')">#TypeScript</span>
-                            <p>A copy of classic hangman game made with React and TypeScript, with state managed by Redux Toolkit.</p></h4>
-                        </div>
-                </div>
-                <div class="card show html javascript less static">
-                    <div class="button-container">
-                        <button class="play-button" aria-label="play gif"></button>
-                        <img class="project-image" src="images/P2small.png" alt="project image two" loading="lazy" width="400px"/>  
-                    </div>          
-                    <div class="project-text">
-                        <h3><a href="https://github.com/SilvijaProzinger/ecommerce-product-page" class="text project-title">E-commerce product page</a></h3>
-                        <h4 class="text project-description"><span class="hashtag" onclick="filterSelection('javascript')">#JavaScript  </span><span class="hashtag" onclick="filterSelection('less')">#LESS  </span><span class="hashtag" onclick="filterSelection('html')">#HTML</span>
-                        <p>My solution for Frontend Mentors E-commerce product page. This product page features a lightbox gallery and working minicart.</p></h4>
-                    </div>
-                </div>
-                <div class="card show html sass javascript moviedbapi dynamic">
-                    <div class="button-container">
-                        <button class="play-button" aria-label="play gif"></button>
-                        <img class="project-image" src="images/P3small.png" alt="project image three" loading="lazy" width="400px"/>
-                    </div>
-                        <div class="project-text">
-                            <h3><a href="https://github.com/SilvijaProzinger/Movie-App" class="text project-title">Movie App</a></h3>
-                            <h4 class="text project-description"><span class="hashtag" onclick="filterSelection('html')">#HTML  </span><span class="hashtag" onclick="filterSelection('sass')">#SASS </span><span class="hashtag" onclick="filterSelection('javascript')">#JavaScript  </span><span class="hashtag" onclick="filterSelection('moviedbapi')">#MoviedbAPI  </span>
-                            <p>A collection of top rated movies fetched from MoviedbAPI, including options to show movie details and get a shuffled movie recommendation based on selected genre.</p></h4>
-                        </div>
-                </div>
-                <div class="card show react mobx static">
-                    <div class="button-container">
-                        <button class="play-button" aria-label="play gif"></button>
-                        <img class="project-image" src="images/P4small.png" alt="project image four" loading="lazy" width="400px"/>
-                    </div>
-                        <div class="project-text">
-                            <h3><a href="https://github.com/SilvijaProzinger/Vehicle-App" class="text project-title">Vehicle App</a></h3>
-                            <h4 class="text project-description"><span class="hashtag" onclick="filterSelection('react')">#React  </span><span class="hashtag" onclick="filterSelection('mobx')">#MobX </span>
-                            <p>Made with React and MobX, this vehicle app shows cars and lets user filter them, sort them, add their own car or delete one from the gallery.</p></h4>
-                        </div>          
-                </div>
-                <div class="card show express node axios dynamic">
-                    <div class="button-container">
-                        <button class="play-button" aria-label="play gif"></button>
-                        <img class="project-image" src="images/P5small.png" alt="project image five" loading="lazy" width="400px"/>
-                    </div>
-                        <div class="project-text">
-                            <h3><a href="https://github.com/SilvijaProzinger/Frontend-Job-Crawler" class="text project-title">Job crawler</a></h3>
-                            <h4 class="text project-description"><span class="hashtag" onclick="filterSelection('express')">#Express  </span><span class="hashtag" onclick="filterSelection('node')">#Node </span><span class="hashtag" onclick="filterSelection('axios')">#Axios </span>
-                            <p>This is a web crawler made with Node, Axios and Express which searches two job searching websites and shows relevant results.</p></h4>
-                        </div>          
-                </div>
-                <div class="card show html javascript sass static">
-                    <div class="button-container">
-                        <button class="play-button" aria-label="play gif"></button>
-                        <img class="project-image" src="images/P6small.png" alt="project image five" loading="lazy" width="400px"/>
-                    </div>
-                        <div class="project-text">
-                            <h3><a href="https://github.com/SilvijaProzinger/Featured-Artist" class="text project-title">Featured Artist</a></h3>
-                            <h4 class="text project-description"><span class="hashtag" onclick="filterSelection('html')">#HTML </span><span class="hashtag" onclick="filterSelection('javascript')">#JavaScript </span><span class="hashtag" onclick="filterSelection('sass')">#SASS </span>
-                            <p>A style focused static website made with JS and styled with SASS, which features a music player and various information about the artist.</p></h4>
-                        </div>          
-                </div>
+            <div class="project-text">
+              <h3>
+                <a
+                  href="https://github.com/SilvijaProzinger/hangman-game"
+                  class="text project-title"
+                  >Hangman with React & Redux Toolkit</a
+                >
+              </h3>
+              <h4 class="text project-description">
+                <span class="hashtag" onclick="filterSelection('react')"
+                  >#React </span
+                ><span class="hashtag" onclick="filterSelection('redux')"
+                  >#Redux Toolkit </span
+                ><span class="hashtag" onclick="filterSelection('typescript')"
+                  >#TypeScript</span
+                >
+                <p>
+                  A copy of classic hangman game made with React and TypeScript,
+                  with state managed by Redux Toolkit.
+                </p>
+              </h4>
             </div>
-        </section>  
+          </div>
+          <div class="card show html javascript less static">
+            <div class="button-container">
+              <button class="play-button" aria-label="play gif"></button>
+              <img
+                class="project-image"
+                src="images/P2small.png"
+                alt="project image two"
+                loading="lazy"
+                width="400px"
+              />
+            </div>
+            <div class="project-text">
+              <h3>
+                <a
+                  href="https://github.com/SilvijaProzinger/ecommerce-product-page"
+                  class="text project-title"
+                  >E-commerce product page</a
+                >
+              </h3>
+              <h4 class="text project-description">
+                <span class="hashtag" onclick="filterSelection('javascript')"
+                  >#JavaScript </span
+                ><span class="hashtag" onclick="filterSelection('less')"
+                  >#LESS </span
+                ><span class="hashtag" onclick="filterSelection('html')"
+                  >#HTML</span
+                >
+                <p>
+                  My solution for Frontend Mentors E-commerce product page. This
+                  product page features a lightbox gallery and working minicart.
+                </p>
+              </h4>
+            </div>
+          </div>
+          <!--<div class="card show html sass javascript moviedbapi dynamic">
+            <div class="button-container">
+              <button class="play-button" aria-label="play gif"></button>
+              <img
+                class="project-image"
+                src="images/P3small.png"
+                alt="project image three"
+                loading="lazy"
+                width="400px"
+              />
+            </div>
+            <div class="project-text">
+              <h3>
+                <a
+                  href="https://github.com/SilvijaProzinger/Movie-App"
+                  class="text project-title"
+                  >Movie App</a
+                >
+              </h3>
+              <h4 class="text project-description">
+                <span class="hashtag" onclick="filterSelection('html')"
+                  >#HTML </span
+                ><span class="hashtag" onclick="filterSelection('sass')"
+                  >#SASS </span
+                ><span class="hashtag" onclick="filterSelection('javascript')"
+                  >#JavaScript </span
+                ><span class="hashtag" onclick="filterSelection('moviedbapi')"
+                  >#MoviedbAPI
+                </span>
+                <p>
+                  A collection of top rated movies fetched from MoviedbAPI,
+                  including options to show movie details and get a shuffled
+                  movie recommendation based on selected genre.
+                </p>
+              </h4>
+            </div>
+          </div>-->
+          <div class="card show react mobx static">
+            <div class="button-container">
+              <button class="play-button" aria-label="play gif"></button>
+              <img
+                class="project-image"
+                src="images/P4small.png"
+                alt="project image four"
+                loading="lazy"
+                width="400px"
+              />
+            </div>
+            <div class="project-text">
+              <h3>
+                <a
+                  href="https://github.com/SilvijaProzinger/Vehicle-App"
+                  class="text project-title"
+                  >Vehicle App</a
+                >
+              </h3>
+              <h4 class="text project-description">
+                <span class="hashtag" onclick="filterSelection('react')"
+                  >#React </span
+                ><span class="hashtag" onclick="filterSelection('mobx')"
+                  >#MobX
+                </span>
+                <p>
+                  Made with React and MobX, this vehicle app shows cars and lets
+                  user filter them, sort them, add their own car or delete one
+                  from the gallery.
+                </p>
+              </h4>
+            </div>
+          </div>
+          <div class="card show express node axios dynamic">
+            <div class="button-container">
+              <button class="play-button" aria-label="play gif"></button>
+              <img
+                class="project-image"
+                src="images/P5small.png"
+                alt="project image five"
+                loading="lazy"
+                width="400px"
+              />
+            </div>
+            <div class="project-text">
+              <h3>
+                <a
+                  href="https://github.com/SilvijaProzinger/Frontend-Job-Crawler"
+                  class="text project-title"
+                  >Job crawler</a
+                >
+              </h3>
+              <h4 class="text project-description">
+                <span class="hashtag" onclick="filterSelection('express')"
+                  >#Express </span
+                ><span class="hashtag" onclick="filterSelection('node')"
+                  >#Node </span
+                ><span class="hashtag" onclick="filterSelection('axios')"
+                  >#Axios
+                </span>
+                <p>
+                  This is a web crawler made with Node, Axios and Express which
+                  searches two job searching websites and shows relevant
+                  results.
+                </p>
+              </h4>
+            </div>
+          </div>
+          <div class="card show html javascript sass static">
+            <div class="button-container">
+              <button class="play-button" aria-label="play gif"></button>
+              <img
+                class="project-image"
+                src="images/P6small.png"
+                alt="project image five"
+                loading="lazy"
+                width="400px"
+              />
+            </div>
+            <div class="project-text">
+              <h3>
+                <a
+                  href="https://github.com/SilvijaProzinger/Featured-Artist"
+                  class="text project-title"
+                  >Featured Artist</a
+                >
+              </h3>
+              <h4 class="text project-description">
+                <span class="hashtag" onclick="filterSelection('html')"
+                  >#HTML </span
+                ><span class="hashtag" onclick="filterSelection('javascript')"
+                  >#JavaScript </span
+                ><span class="hashtag" onclick="filterSelection('sass')"
+                  >#SASS
+                </span>
+                <p>
+                  A style focused static website made with JS and styled with
+                  SASS, which features a music player and various information
+                  about the artist.
+                </p>
+              </h4>
+            </div>
+          </div>
+        </div>
+      </section>
 
-        <section class="fourth-page" id="contact">
-            <div class="socials-div hidden">
-                <a class="calltoaction" href="mailto:silvija.prozinger@gmail.com"><img class="social-icon" alt="mail icon" src="images/icons8-important-mail-48.png">CONTACT ME</a> <!-- icon credit to icons8 -->
-                <ul class="contact-info">
-                    <li class="text socials"><a href="https://www.github.com/SilvijaProzinger" class="social-link">GitHub</a></li>
-                    <li class="text socials"><a href="https://www.linkedin.com/in/silvija-prozinger" class="social-link">LinkedIn</a></li>
-                    <li class="text socials"><a href="https://www.twitter.com/cssandcoffee" class="social-link">Twitter</a></li>
-                    <li class="text"><a href="https://www.educative.io/profile/view/6051756579487744" class="social-link">Educative</a></li>
-                </ul>
-            </div>
-        </section>
+      <section class="fourth-page" id="contact">
+        <div class="socials-div hidden">
+          <a class="calltoaction" href="mailto:silvija.prozinger@gmail.com"
+            ><img
+              class="social-icon"
+              alt="mail icon"
+              src="images/icons8-important-mail-48.png"
+            />CONTACT ME</a
+          >
+          <!-- icon credit to icons8 -->
+          <ul class="contact-info">
+            <li class="text socials">
+              <a
+                href="https://www.github.com/SilvijaProzinger"
+                class="social-link"
+                >GitHub</a
+              >
+            </li>
+            <li class="text socials">
+              <a
+                href="https://www.linkedin.com/in/silvija-prozinger"
+                class="social-link"
+                >LinkedIn</a
+              >
+            </li>
+            <li class="text socials">
+              <a href="https://www.twitter.com/cssandcoffee" class="social-link"
+                >Twitter</a
+              >
+            </li>
+            <li class="text">
+              <a
+                href="https://www.educative.io/profile/view/6051756579487744"
+                class="social-link"
+                >Educative</a
+              >
+            </li>
+          </ul>
+        </div>
+      </section>
     </main>
-        
+
     <footer>
-        <h4 class="text footer">© 2023 Silvija Prozinger </h4>
+      <h4 class="text footer">© 2024 Silvija Prozinger</h4>
     </footer>
 
-    <script src="script.js"></script>
-</body>
+    <script src="script-minified.js"></script>
+  </body>
 </html>
