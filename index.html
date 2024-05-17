@@ -19,8 +19,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="style-minified.css" />
-    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
-    <link rel="preload" href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans&display=swap" as="style"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
+    <link
+      rel="preload"
+      href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans&display=swap"
+      as="style"
+    />
     <link
       href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans&display=swap"
       rel="stylesheet"
@@ -43,7 +47,7 @@
       href="images/favicon-16x16.png"
     />
     <link rel="manifest" href="images/site.webmanifest" />
-    <link rel="preload" as="image" href="images/bgimage.webp">
+    <link rel="preload" as="image" href="images/bgimage.webp" />
     <title>Welcome!</title>
   </head>
   <body>
@@ -175,12 +179,52 @@
               </h4>
             </div>
           </div>
-          <div class="card show html javascript less static">
+          <div class="card show react zustand typescript materialui">
             <div class="button-container">
               <button class="play-button" aria-label="play gif"></button>
               <img
                 class="project-image"
                 src="images/P2small.png"
+                alt="project image three"
+                loading="lazy"
+                width="400px"
+              />
+            </div>
+            <div class="project-text">
+              <h3>
+                <a
+                  href="https://github.com/SilvijaProzinger/contract-managing-app"
+                  class="text project-title"
+                  >Contract managing app</a
+                >
+              </h3>
+              <h4 class="text project-description">
+                <span class="hashtag" onclick="filterSelection('react')"
+                  >#React </span
+                ><span class="hashtag" onclick="filterSelection('zustand')"
+                  >#Zustand
+                </span>
+                <span class="hashtag" onclick="filterSelection('typescript')"
+                  >#TypeScript
+                </span>
+                <span class="hashtag" onclick="filterSelection('materialui')"
+                  ><div id="Material-UI"></div>
+                </span>
+                <p>
+                  A web app for managing contracts. Made with React, TypeScript,
+                  styled with Material UI and with state managed by Zustand.
+                  Features essential CRUD operations along with filtering and
+                  multilanguage support.
+                </p>
+              </h4>
+            </div>
+          </div>
+          <div class="card show html javascript less static">
+            <div class="button-container">
+              <button class="play-button" aria-label="play gif"></button>
+              <img
+                class="project-image"
+                src="images/P3small.png"
                 alt="project image two"
                 loading="lazy"
                 width="400px"
@@ -205,39 +249,6 @@
                 <p>
                   My solution for Frontend Mentors E-commerce product page. This
                   product page features a lightbox gallery and working minicart.
-                </p>
-              </h4>
-            </div>
-          </div>
-          <div class="card show react mobx static">
-            <div class="button-container">
-              <button class="play-button" aria-label="play gif"></button>
-              <img
-                class="project-image"
-                src="images/P3small.png"
-                alt="project image three"
-                loading="lazy"
-                width="400px"
-              />
-            </div>
-            <div class="project-text">
-              <h3>
-                <a
-                  href="https://github.com/SilvijaProzinger/Vehicle-App"
-                  class="text project-title"
-                  >Vehicle App</a
-                >
-              </h3>
-              <h4 class="text project-description">
-                <span class="hashtag" onclick="filterSelection('react')"
-                  >#React </span
-                ><span class="hashtag" onclick="filterSelection('mobx')"
-                  >#MobX
-                </span>
-                <p>
-                  Made with React and MobX, this vehicle app shows cars and lets
-                  user filter them, sort them, add their own car or delete one
-                  from the gallery.
                 </p>
               </h4>
             </div>
