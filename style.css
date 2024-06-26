@@ -239,8 +239,12 @@ a:visited {
   background-image: url("images/icons8-typescript.svg");
 }
 
-.skill-mobx::before {
-  background-image: url("images/icons8-mobx.svg");
+.skill-angular::before {
+  background-image: url("images/icons8-angular-48.png");
+}
+
+.skill-wordpress::before {
+  background-image: url("images/icons8-wordpress.svg");
 }
 
 .skill-xd::before {
