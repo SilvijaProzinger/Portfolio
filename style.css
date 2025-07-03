@@ -13,11 +13,6 @@ ul {
   margin: 0 auto;
 }
 
-span:hover {
-  color: #fa8072;
-  cursor: pointer;
-}
-
 .first-page {
   background: url(images/bgimage.webp) no-repeat center center; /* image credit to Bench Accounting on Unsplash */
   -webkit-background-size: cover;
@@ -276,6 +271,15 @@ a:visited {
   text-align: left;
 }
 
+.project-features { 
+  font-weight: 600;
+}
+
+.hashtag:hover {
+  color: #fa8072;
+  cursor: pointer;
+}
+
 .card {
   display: none;
 }
@@ -493,11 +497,6 @@ a:visited {
     font-size: 1.8rem;
   }
 
-  .show-all {
-    padding: 15px;
-    font-size: 2em;
-  }
-
   .project-text {
     padding: 2rem 2rem 2rem 6rem;
   }
@@ -513,7 +512,7 @@ a:visited {
   }
 
   .menu-link {
-    font-size: 1.5rem;
+    font-size: 1.12rem;
   }
 
   .show {
@@ -551,10 +550,6 @@ a:visited {
   }
 
   .project-text h3 {
-    text-align: center;
-  }
-
-  .project-description {
     text-align: center;
   }
 
@@ -702,10 +697,6 @@ a:visited {
   }
 
   .project-text h3 {
-    text-align: center;
-  }
-
-  .project-description {
     text-align: center;
   }
 }

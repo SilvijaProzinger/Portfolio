@@ -116,18 +116,6 @@ for (let i = 0; i < playButton.length; i++) {
   });
 }
 
-//on hover show project description
-/*for(let i = 0; i < card.length; i++){
-    card[i].onmouseover = function(){
-        description[i].style.display = "block";
-        show[i].style.boxShadow = "0 4px 8px 0 rgba(0,0,0,0.2)"
-    }
-    card[i].onmouseout = function (){
-        description[i].style.display = "none";
-        show[i].style.boxShadow = "none"
-    }
-}*/
-
 //animate some elements when they get into viewport
 (function () {
   let elements;

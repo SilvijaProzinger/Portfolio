@@ -132,7 +132,7 @@
       </section>
 
       <section class="third-page" id="projects">
-        <h1 class="page-title hidden">featured side projects</h1>
+        <h1 class="page-title hidden">featured projects</h1>
         <hr class="line" />
         <div class="filter-buttons">
           <div class="show-all-button">
@@ -143,45 +143,50 @@
               >SHOW ALL</a
             >
           </div>
-          <!--<div class="show-all-button"><a class="menu-link show-all" onclick="filterSelection('static')">STATIC</a></div>
-                <div class="show-all-button"><a class="menu-link show-all" onclick="filterSelection('dynamic')">DYNAMIC</a></div>-->
         </div>
         <div class="projects hidden">
-          <div class="card show react redux typescript dynamic">
+          <div class="card show react tanstack-query heroui react-hook-form chartjs contractor">
             <div class="button-container">
               <button class="play-button" aria-label="play gif"></button>
               <img
                 class="project-image"
                 src="images/P1small.png"
-                alt="hangman with react and redux toolkit"
+                alt="rb accounting"
                 loading="lazy"
                 width="400px"
               />
             </div>
             <div class="project-text">
-              <h3>
-                <a
-                  href="https://github.com/SilvijaProzinger/hangman-game"
-                  class="text project-title"
-                  >Hangman with React & Redux Toolkit</a
-                >
-              </h3>
+              <h3 class="text project-title">Accounting document managing web app</h3>
               <h4 class="text project-description">
                 <span class="hashtag" onclick="filterSelection('react')"
-                  >#React </span
-                ><span class="hashtag" onclick="filterSelection('redux')"
-                  >#Redux Toolkit </span
-                ><span class="hashtag" onclick="filterSelection('typescript')"
-                  >#TypeScript</span
+                  > #React</span
+                ><span class="hashtag" onclick="filterSelection('tanstack-query')"
+                  > #Tanstack Query</span
+                ><span class="hashtag" onclick="filterSelection('react-hook-form')"
+                  > #React Hook Form</span
+                >
+                <span class="hashtag" onclick="filterSelection('heroui')"
+                  > #HeroUI</span
+                >
+                <span class="hashtag" onclick="filterSelection('chartjs')"
+                  > #ChartJS</span
+                >
+                  <span class="hashtag" onclick="filterSelection('contractor')"
+                  > #Contractor work</span
                 >
                 <p>
-                  A copy of classic hangman game made with React and TypeScript,
-                  with state managed by Redux Toolkit.
+                  Internal web app used to manage documents and users, with role based access control, document editing and simple commenting feature.
+                  Made as contractor work for an international auditing and accounting company.
+                </p>
+                <p>
+                  <span class="project-features">Features:</span>
+                  <span>authorization, 2FA, comments, company creation and editing, advanced filtering and sorting, bulk and single upload, document deletion and editing, document queue editing, comments, role based access, user handling, user settings</span>
                 </p>
               </h4>
             </div>
           </div>
-          <div class="card show react zustand typescript materialui">
+          <div class="card show react zustand typescript materialui side">
             <div class="button-container">
               <button class="play-button" aria-label="play gif"></button>
               <img
@@ -210,8 +215,11 @@
                   >#TypeScript
                 </span>
                 <span class="hashtag" onclick="filterSelection('materialui')"
-                  ><div id="Material-UI"></div>
+                  >#Material UI
                 </span>
+                  <span class="hashtag" onclick="filterSelection('side')"
+                  > #Side project</span
+                >
                 <p>
                   A web app for managing contracts. Made with React, TypeScript,
                   styled with Material UI and with state managed by Zustand.
@@ -221,7 +229,7 @@
               </h4>
             </div>
           </div>
-          <div class="card show angular typescript firebase">
+          <div class="card show angular typescript firebase side">
             <div class="button-container">
               <button class="play-button" aria-label="play gif"></button>
               <img
@@ -251,6 +259,9 @@
                 <span class="hashtag" onclick="filterSelection('firebase')"
                   >#Firebase</span
                 >
+                  <span class="hashtag" onclick="filterSelection('side')"
+                  > #Side project</span
+                >
                 <p>
                   An app made in Angular that implements Firebase authorization
                   for users and admins, limited access to product inventory and
@@ -260,13 +271,13 @@
               </h4>
             </div>
           </div>
-          <div class="card show html javascript less static">
+          <div class="card show react redux typescript side">
             <div class="button-container">
               <button class="play-button" aria-label="play gif"></button>
               <img
                 class="project-image"
                 src="images/P4small.png"
-                alt="e-commerce product page"
+                alt="hangman with react and redux toolkit"
                 loading="lazy"
                 width="400px"
               />
@@ -274,57 +285,25 @@
             <div class="project-text">
               <h3>
                 <a
-                  href="https://github.com/SilvijaProzinger/ecommerce-product-page"
+                  href="https://github.com/SilvijaProzinger/hangman-game"
                   class="text project-title"
-                  >E-commerce product page</a
+                  >Hangman with React & Redux Toolkit</a
                 >
               </h3>
               <h4 class="text project-description">
-                <span class="hashtag" onclick="filterSelection('javascript')"
-                  >#JavaScript </span
-                ><span class="hashtag" onclick="filterSelection('less')"
-                  >#LESS </span
-                ><span class="hashtag" onclick="filterSelection('html')"
-                  >#HTML</span
+                <span class="hashtag" onclick="filterSelection('react')"
+                  >#React </span
+                ><span class="hashtag" onclick="filterSelection('redux')"
+                  >#Redux Toolkit </span
+                ><span class="hashtag" onclick="filterSelection('typescript')"
+                  >#TypeScript</span
+                >
+                  <span class="hashtag" onclick="filterSelection('side')"
+                  > #Side project</span
                 >
                 <p>
-                  My solution for Frontend Mentors E-commerce product page. This
-                  product page features a lightbox gallery and working minicart.
-                </p>
-              </h4>
-            </div>
-          </div>
-          <div class="card show html javascript sass static">
-            <div class="button-container">
-              <button class="play-button" aria-label="play gif"></button>
-              <img
-                class="project-image"
-                src="images/P5small.png"
-                alt="featured artist"
-                loading="lazy"
-                width="400px"
-              />
-            </div>
-            <div class="project-text">
-              <h3>
-                <a
-                  href="https://github.com/SilvijaProzinger/Featured-Artist"
-                  class="text project-title"
-                  >Featured Artist</a
-                >
-              </h3>
-              <h4 class="text project-description">
-                <span class="hashtag" onclick="filterSelection('html')"
-                  >#HTML </span
-                ><span class="hashtag" onclick="filterSelection('javascript')"
-                  >#JavaScript </span
-                ><span class="hashtag" onclick="filterSelection('sass')"
-                  >#SASS
-                </span>
-                <p>
-                  A style focused static website made with JS and styled with
-                  SASS, which features a music player and various information
-                  about the artist.
+                  A copy of classic hangman game made with React and TypeScript,
+                  with state managed by Redux Toolkit.
                 </p>
               </h4>
             </div>
@@ -375,7 +354,7 @@
     </main>
 
     <footer>
-      <h4 class="text footer">© 2024 Silvija Prozinger</h4>
+      <h4 class="text footer">© 2025 Silvija Prozinger</h4>
     </footer>
 
     <script src="script-minified.js"></script>
